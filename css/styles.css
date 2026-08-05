@@ -35,13 +35,29 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-
 	display: flex;
 	justify-content: center;
+	/* justify-content: 
+		space-between
+		flex-end
+		flex-start
+		space-around
+		space-evenly 
+	/ */
+	align-items: center;
+	flex-wrap: wrap;
+	/* flex-wrap: 
+		wrap
+		nowrap
+		wrap-reverse
+	/ */
 }
 
 nav li {
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 1%;
+	margin-right: 1%;
 }
 
 nav a {
@@ -66,12 +82,14 @@ main {
 }
 
 section {
-	margin-bottom: 35px;
+	margin-bottom: 55px;
 }
 
 article {
-	background-color: white;
-	border: 1px solid #cfdede;
+	background-color: rgb(255, 255, 255);
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cfdede;
 	border-radius: 6px;
 	padding: 15px;
 	margin-bottom: 15px;
