@@ -1,0 +1,92 @@
+/* ---------- General ---------- */
+
+body {
+	margin: 0;
+	font-family: Georgia, "Times New Roman", serif;
+	background-color: #f5fbfb;
+	color: #333333;
+}
+
+/* ---------- Encabezado ---------- */
+
+header {
+	background-color: #d9f0ef;
+	text-align: center;
+	padding: 20px;
+}
+
+header h1 {
+	margin-bottom: 5px;
+	color: #0d5c63;
+}
+
+header p {
+	margin-top: 0;
+	color: #4f7d75;
+}
+
+/* ---------- Navegación ---------- */
+
+nav {
+	background-color: #6ab7b8;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	display: flex;
+	justify-content: center;
+}
+
+nav li {
+	margin: 0;
+}
+
+nav a {
+	display: block;
+	padding: 15px 20px;
+
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a:hover {
+	background-color: #4b9c9d;
+}
+
+/* ---------- Contenido ---------- */
+
+main {
+	max-width: 900px;
+	margin: auto;
+	padding: 30px;
+}
+
+section {
+	margin-bottom: 35px;
+}
+
+article {
+	background-color: white;
+	border: 1px solid #cfdede;
+	border-radius: 6px;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+article h3 {
+	margin-top: 0;
+	color: #0d5c63;
+}
+
+/* ---------- Pie ---------- */
+
+footer {
+	background-color: #d9f0ef;
+	text-align: center;
+	padding: 15px;
+	margin-top: 40px;
+}
