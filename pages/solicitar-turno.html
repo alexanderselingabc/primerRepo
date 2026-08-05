@@ -3,28 +3,81 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portal del Paciente</title>
-
+	<title>Solicitar Turno</title>
 	<link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
 
 	<header>
-
+		<h1>Portal del Paciente</h1>
+		<p>Clínica SaludTotal</p>
 	</header>
 
 	<nav>
-
+		<ul>
+			<li><a href="../index.html">Inicio</a></li>
+			<li><a href="solicitar-turno.html">Solicitar Turno</a></li>
+			<li><a href="mis-turnos.html">Mis Turnos</a></li>
+			<li><a href="historial.html">Historial Clínico</a></li>
+			<li><a href="resultados.html">Resultados</a></li>
+		</ul>
 	</nav>
 
 	<main>
 
+		<section>
+
+			<h2>Solicitar un nuevo turno</h2>
+
+			<form action="confirmacion.html">
+
+				<p>
+					<label for="especialidad">Especialidad</label><br>
+					<select id="especialidad" name="especialidad">
+						<option>Clínica Médica</option>
+						<option>Cardiología</option>
+						<option>Pediatría</option>
+						<option>Traumatología</option>
+					</select>
+				</p>
+
+				<p>
+					<label for="medico">Médico</label><br>
+					<select id="medico" name="medico">
+						<option>Dra. Gómez</option>
+						<option>Dr. Pérez</option>
+						<option>Dra. Fernández</option>
+					</select>
+				</p>
+
+				<p>
+					<label for="fecha">Fecha</label><br>
+					<input type="date" id="fecha">
+				</p>
+
+				<p>
+					<label for="hora">Horario</label><br>
+					<select id="hora">
+						<option>09:00</option>
+						<option>10:00</option>
+						<option>11:30</option>
+						<option>15:00</option>
+					</select>
+				</p>
+
+				<p>
+					<input type="submit" value="Solicitar Turno">
+				</p>
+
+			</form>
+
+		</section>
+
 	</main>
 
 	<footer>
-
+		<p>© 2026 Clínica SaludTotal</p>
 	</footer>
 
 </body>
