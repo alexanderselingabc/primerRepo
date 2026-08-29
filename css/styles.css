@@ -168,14 +168,31 @@ table button {
 	cursor: pointer;
 }
 
-table button:disabled {
+table button:hover {
+	background-color: #4b9c9d;
+}
+
+table button:disabled,
+table button:hover:disabled {
 	background-color: #b8caca;
 	color: #6f7f7f;
 	cursor: not-allowed;
 }
 
-table button:hover {
-	background-color: #4b9c9d;
+
+.danger {
+	color: white;
+	background-color: #b86a6a;
+}
+
+.danger:hover {
+	color: white;
+	background-color: #d89191;
+}
+
+.danger:disabled {
+	color: white;
+	background-color: #d6caca;
 }
 
 /* ---------- Formulario ---------- */
