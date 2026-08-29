@@ -31,6 +31,7 @@ header p {
 	color: #4f7d75;
 }
 
+
 /* ---------- Navegación ---------- */
 
 nav {
@@ -91,6 +92,10 @@ section {
 	margin-bottom: 55px;
 }
 
+section h2 {
+	text-align: center;
+}
+
 article {
 	background-color: rgb(255, 255, 255);
 	border-style: solid;
@@ -104,6 +109,76 @@ article {
 article h3 {
 	margin-top: 0;
 	color: #0d5c63;
+}
+
+/* ---------- Formulario ---------- */
+
+form {
+	max-width: 600px;
+	margin: 30px auto;
+	padding: 30px;
+
+	background-color: white;
+	border: 1px solid #cfdede;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+form p {
+	margin: 0 0 20px;
+}
+
+form label {
+	display: inline-block;
+	margin-bottom: 6px;
+
+	color: #0d5c63;
+	font-weight: bold;
+}
+
+form select,
+form input[type="date"] {
+	width: 100%;
+	box-sizing: border-box;
+
+	padding: 10px 12px;
+
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1rem;
+	color: #333333;
+
+	background-color: #f5fbfb;
+	border: 1px solid #a9c9c9;
+	border-radius: 5px;
+}
+
+form select:focus,
+form input[type="date"]:focus {
+	outline: none;
+	border-color: #4b9c9d;
+	box-shadow: 0 0 0 2px #d9f0ef;
+}
+
+form input[type="submit"] {
+	width: 100%;
+
+	padding: 12px;
+
+	background-color: #0d5c63;
+	color: white;
+
+	border: none;
+	border-radius: 5px;
+
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1rem;
+	font-weight: bold;
+
+	cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+	background-color: #4b9c9d;
 }
 
 /* ---------- Pie ---------- */
