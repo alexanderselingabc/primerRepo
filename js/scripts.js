@@ -1,7 +1,3 @@
-function redirigirA(page) {
-	window.location.href = page;
-}
-
 async function buscarUsuario(email, password) {
 	const response = await fetch("../data/datos.json");
 	const data = await response.json();
@@ -14,42 +10,58 @@ async function buscarUsuario(email, password) {
 
 async function iniciarSesion(event) {
 	event.preventDefault();
-
 	const email = document.querySelector("#email").value;
 	const password = document.querySelector("#password").value;
 
 	const usuario = await buscarUsuario(email, password);
-
-
 	const errores = document.querySelector(".errores");
-
 	if (!usuario) {
 		errores.style.display = "block";
 		errores.textContent = "Usuario o contraseña incorrectos"
 		return;
 	}
-	redirigirA("../index.html");
+	homeMostrarSection()
+	homeMostrarBienvenida(usuario.nombre)
+	homeMostrarMenu(usuario.rol)
 }
 
 
-function darlefuncionaldiadalform() {
-	const formulario = document.querySelector("#form-login");
-	formulario.addEventListener("submit", event => {
+function homeMostrarSection() {
+	document.querySelector("#mainHome").style.display = "block"
+	document.querySelector("#mainLogin").style.display = "none"
+}
+function homeMostrarBienvenida(nombre) {
+	document.querySelector("#bienvenida").textContent = `Bienvenid@ ${nombre}`;
+}
+function homeMostrarMenu(rol) {
+	document.querySelectorAll("nav li").forEach(elemento => {
+		if (elemento.classList.contains(rol)) {
+			elemento.style.display = "block";
+		} else {
+			// elemento.style.display = "none";
+		}
+	});
+}
+// -------------------common----------------------
+function ocultarFuncionesDeUsuario() {
+	document.querySelectorAll(".paciente").forEach(elemento => {
+		elemento.style.display = "none";
+	});
+	document.querySelectorAll(".admin").forEach(elemento => {
+		elemento.style.display = "none";
+	});
+}
+function asignarLoginAlFormulario() {
+	document.querySelector("#form-login").addEventListener("submit", event => {
 		iniciarSesion(event)
 	});
 }
-
-
-
-
-//-----------home-----------------//
-
-function mostrarBienvenida(nombre) {
-	document.querySelector("#bienvenida").textContent = `Bienvenido/a ${nombre}`;
+function redirigirA(page) {
+	window.location.href = page;
 }
-function mostrarMenu(rol) {
-	const elementos = document.querySelectorAll(".paciente");
-	elementos.forEach(elemento => {
-		elemento.style.display = rol === "paciente" ? "block" : "none";
-	});
+// -----------------------------------------
+// esto se va a ejecutar siempre
+if (document.querySelector("#mainLogin")) {
+	ocultarFuncionesDeUsuario();
+	asignarLoginAlFormulario();
 }

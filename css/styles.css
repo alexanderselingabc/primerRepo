@@ -6,6 +6,16 @@
 
 
 
+#mainHome {
+	display: none;
+}
+
+#mainLogin {
+	display: block;
+}
+
+
+
 /* ---------- General ---------- */
 
 body {

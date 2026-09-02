@@ -10,15 +10,15 @@
 		{
 			"id": 2,
 			"nombre": "Maria Gonzalez",
-			"email": "mariagonzalez1945@gmail.com",
+			"email": "mariagonzalez@gmail.com",
 			"password": "1234",
 			"rol": "paciente"
 		},
 		{
 			"id": 3,
 			"nombre": "Alexander Seling",
-			"email": "alexanderseling@saludtotal.admin",
-			"password": "admin",
+			"email": "admin@saludtotal.com",
+			"password": "1234",
 			"rol": "admin"
 		}
 	]
