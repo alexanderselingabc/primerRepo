@@ -1,3 +1,11 @@
+.errores {
+	display: none;
+	color: #b86a6a;
+	font-size: 120%;
+}
+
+
+
 /* ---------- General ---------- */
 
 body {

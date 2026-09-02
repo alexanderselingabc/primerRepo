@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portal del Paciente</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -18,13 +19,13 @@
 
 	<nav>
 		<ul>
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="pages/solicitar-turno.html">Solicitar Turno</a></li>
-			<li><a href="pages/mis-turnos.html">Mis Turnos</a></li>
-			<li><a href="pages/historial.html">Historial Clínico</a></li>
-			<li><a href="pages/resultados.html">Resultados</a></li>
-			<li><a href="pages/login.html">Iniciar sesión</a></li>
-			<li><a href="pages/signup.html">Crear usuarion</a></li>
+			<li class="visitante"><a href="index.html">Inicio</a></li>
+			<li class="paciente"><a href="pages/solicitar-turno.html">Solicitar Turno</a></li>
+			<li class="paciente"><a href="pages/mis-turnos.html">Mis Turnos</a></li>
+			<li class="paciente"><a href="pages/historial.html">Historial Clínico</a></li>
+			<li class="paciente"><a href="pages/resultados.html">Resultados</a></li>
+			<li class="visitante"><a href="pages/login.html">Iniciar sesión</a></li>
+			<li class="visitante"><a href="pages/signup.html">Crear usuario</a></li>
 		</ul>
 	</nav>
 
@@ -32,7 +33,7 @@
 
 		<section>
 
-			<h2>Bienvenido</h2>
+			<h2 id="bienvenido">Bienvenido</h2>
 
 			<p>
 				Bienvenido al Portal del Paciente de la Clínica SaludTotal.

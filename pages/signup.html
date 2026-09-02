@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Solicitar Turno</title>
 	<link rel="stylesheet" href="../css/styles.css">
+	<script src="../js/scripts.js"></script>
 </head>
 
 <body>
@@ -18,13 +19,13 @@
 
 	<nav>
 		<ul>
-			<li><a href="../index.html">Inicio</a></li>
-			<li><a href="solicitar-turno.html">Solicitar Turno</a></li>
-			<li><a href="mis-turnos.html">Mis Turnos</a></li>
-			<li><a href="historial.html">Historial Clínico</a></li>
-			<li><a href="resultados.html">Resultados</a></li>
-			<li><a href="login.html">Iniciar sesión</a></li>
-			<li><a href="signup.html">Crear usuario</a></li>
+			<li class="visitante"><a href="../index.html">Inicio</a></li>
+			<li class="paciente"><a href="solicitar-turno.html">Solicitar Turno</a></li>
+			<li class="paciente"><a href="mis-turnos.html">Mis Turnos</a></li>
+			<li class="paciente"><a href="historial.html">Historial Clínico</a></li>
+			<li class="paciente"><a href="resultados.html">Resultados</a></li>
+			<li class="visitante"><a href="login.html">Iniciar sesión</a></li>
+			<li class="visitante"><a href="signup.html">Crear usuario</a></li>
 		</ul>
 	</nav>
 
@@ -32,25 +33,26 @@
 
 		<section>
 
-			<h2>Iniciar sesión</h2>
+			<h2>Registrarse</h2>
 
-			<form action="../index.html">
-
+			<form id="form-signup">
 				<p>
 					<label for="email">Correo electronico</label><br>
 					<input type="email" id="email">
 				</p>
-
+				<p>
+					<label for="nombre">Nombre</label><br>
+					<input type="text" id="nombre">
+				</p>
 				<p>
 					<label for="password">Contraseña</label><br>
 					<input type="password" id="password">
 				</p>
-
 				<p>
-					<input type="submit" value="Iniciar sesión">
+					<input type="submit" value="Registrarse" onclick="darlefuncionaldiadalform()">
 				</p>
-
-			</form>
+				<p class="errores"> noproblemos</p>
+				</form>
 
 		</section>
 
